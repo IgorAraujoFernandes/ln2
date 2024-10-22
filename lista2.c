@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ex11
+#define ex12
 
 #ifdef ex1
 int main()
@@ -294,6 +294,35 @@ printf ("a maior temperatura foi de: %d graus\n", maiortemp);
 printf ("a menor temperatura foi de: %d graus\n", menortemp);
 }
 #endif // ex11
+#ifdef ex12
+int main(){
+float A[10];
+int i;
+int qaa = 0;
+int qar = 0;
+int soma = 0;
+for(i=0;i<10;i++){
+    printf("digite a nota do aluno %d\n", i+1);
+    scanf("%g", &A[i]);
+    soma = soma + A[i];
+    if (A[i]>=7){
+        qaa++;
+    }
+    else{
+        qar++;
+    }
+}
+for(i=0;i<10;i++){
+    printf("a nota do aluno %d e: %g\n", i+1, A[i]);
+}
+printf("a media de notas da sala e de: %d\n", soma/10);
+printf("a quantidade de alunos aprovados e de: %d\n", qaa);
+printf("a quantidade de alunos reprovados e de: %d\n", qar);
+
+
+}
+#endif // ex12
+
 
 #ifdef ex18
 int main(){
